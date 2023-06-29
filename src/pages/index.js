@@ -8,9 +8,12 @@ export default function Home() {
     <>
       <Header />
       <MobileMenu />
-      <h1>Hello world</h1>
-      <p>This is just an example</p>
-      <h2>Sections</h2>
+      <h1 className="h-screen flex flex-col justify-end">
+        <p className="text-lg px-4 pb-8">
+          Hello, I'm Emanuel Padilla, Frontend Developer based in Soacha,
+          Cundinamarca
+        </p>
+      </h1>
       <Technologies />
       <TopProjects />
     </>
