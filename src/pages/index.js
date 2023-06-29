@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <MobileMenu />
       <h1 className="h-screen flex flex-col justify-end">
-        <p className="text-lg px-4 pb-8">
+        <p className="text-xl px-4 pb-8">
           Hello, I'm Emanuel Padilla, Frontend Developer based in Soacha,
           Cundinamarca
         </p>

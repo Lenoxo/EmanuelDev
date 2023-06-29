@@ -15,10 +15,10 @@ export default function Technologies() {
     "w-12 h-auto text-inherit hover:w-20 transition-all ease-in-out duration-300";
   return (
     <>
-      <section className="h-screen bg-green-300 flex flex-col items-center justify-around">
-        <h2 className="text-xl font-bold">Technologies</h2>
+      <section className="h-screen bg-sky-300 flex flex-col items-center justify-around">
+        <h2 className="text-2xl font-bold">Technologies</h2>
         <div>
-          <h3 className="text-lg text-center font-semibold">Fundamentals</h3>
+          <h3 className="text-xl text-center font-semibold">Fundamentals</h3>
           <div className="grid grid-cols-3 gap-4 mt-4">
             <IoLogoHtml5 className={iconStyles} />
             <IoLogoCss3 className={iconStyles} />
@@ -31,7 +31,7 @@ export default function Technologies() {
 
         {/* Here will be technologies icons like HTML, CSS, and JS, with NPM NodeJS and Git */}
         <div>
-          <h3 className="text-lg text-center font-semibold">
+          <h3 className="text-xl text-center font-semibold">
             JS Libraries and Frameworks
           </h3>
           <div className="flex space-x-4 mt-4 justify-center">
@@ -42,7 +42,7 @@ export default function Technologies() {
         </div>
         {/* Here will be technologies icons like React, Vitejs, and Next.js */}
         <div>
-          <h3 className="text-lg text-center font-semibold">CSS</h3>
+          <h3 className="text-xl text-center font-semibold">CSS</h3>
           <div className="flex space-x-4 mt-4">
             <BiLogoTailwindCss className={iconStyles} />
             <IoLogoSass className={iconStyles} />

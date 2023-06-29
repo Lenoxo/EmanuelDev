@@ -1,7 +1,7 @@
 export default function ProjectCard() {
   return (
-    <div className="w-64 h-64 bg-blue-700 flex-shrink-0 rounded-xl p-4 transition-all ease-in-out hover:h-72 hover:w-72">
-      <div className="h-3/5 rounded-lg bg-red-300">Image</div>
+    <div className="w-80 h-80 bg-zinc-300 flex-shrink-0 rounded-md">
+      <div className="h-3/5 rounded-md bg-zinc-800">Image</div>
       <span className="h-2/5 text-md">
         This is just an example <strong>description</strong> for your service
         jeje. <br />
