@@ -2,7 +2,7 @@ import { FaBars } from "react-icons/fa";
 import DarkModeButton from "./DarkModeButton";
 export default function Header({ setShowMobileMenu, showMobileMenu }) {
   return (
-    <header className="fixed min-w-full bg-white border-zinc-300 border-b-4 py-4 text-lg">
+    <header className="fixed z-10 min-w-full bg-white border-zinc-300 border-b-4 py-4 text-lg">
       <p className="text-center font-bold md:text-start">
         Emanuel Padilla
       </p>
