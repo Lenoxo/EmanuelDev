@@ -3,8 +3,8 @@ import ProjectDetail from "@/components/ProjectDetail";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 
-export default function name(params) {
-  const [open, setOpen] = useState(false)
+export default function Projects() {
+  // For now, I'll have this array for experimenting with the cards.
   const projectsData = [
     {
       title: "Reactify",
@@ -29,10 +29,11 @@ export default function name(params) {
     <div className="h-screen flex flex-col pt-16 items-center">
       <h2 className="text-2xl font-bold mb-8 mt-2">My Projects</h2>
       <section>
-        {projectsData.map((project) => {
+        {projectsData.map((project, index) => {
+          const [open, setOpen] = useState(false)
           return (
             // Review later if this is coherent
-            <article className="w-80 h-60 border border-zinc-700 rounded-lg mb-8">
+            <article className="w-80 h-60 border border-zinc-700 rounded-lg mb-8" key={index}>
               <figure className="w-full h-4/5 relative">
                 <img
                   src={project.image}

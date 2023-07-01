@@ -24,8 +24,9 @@ export default function Modal({ open, setOpen, children }) {
           >
             <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border border-zinc-700">
               <div className="bg-zinc-50 px-4 py-3 sm:px-6 flex flex-row-reverse">
-                {/* Svg que quiero mover al final en el eje x */}
-                <HiXCircle className="flex-shrink-0 h-8 w-8 text-zinc-400 cursor-pointer" aria-hidden="true" onClick={() => setOpen(false)} ref={cancelButtonRef} />
+                <button onClick={() => setOpen(false)} ref={cancelButtonRef}>
+                  <HiXCircle className="flex-shrink-0 h-8 w-8 text-zinc-400 cursor-pointer" aria-hidden="true" />
+                </button>
               </div>
               <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">{children}</div>
