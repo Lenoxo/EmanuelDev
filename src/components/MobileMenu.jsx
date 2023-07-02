@@ -15,7 +15,7 @@ export default function MobileMenu({ setShowMobileMenu }) {
     <>
       <nav
         style={navHeight}
-        className="fixed z-30 flex flex-col w-full top-14 mt-2 p-8 bg-white items-start text-start justify-between font-semibold text-lg"
+        className="fixed z-30 flex flex-col w-full top-14 mt-[0.3rem] p-8 bg-white items-start text-start justify-between font-semibold text-lg"
       >
         <div className="flex flex-col items-center w-full h-1/3 justify-between">
           <LinkItem href='/' name='Home' handleClick={hideMobileMenu}/>

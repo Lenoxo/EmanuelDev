@@ -22,7 +22,7 @@ export default function Modal({ open, setOpen, children }) {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border border-zinc-700">
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border border-zinc-300">
               <div className="bg-zinc-50 px-4 py-3 sm:px-6 flex flex-row-reverse">
                 <button onClick={() => setOpen(false)} ref={cancelButtonRef}>
                   <HiXCircle className="flex-shrink-0 h-8 w-8 text-zinc-400 cursor-pointer" aria-hidden="true" />
