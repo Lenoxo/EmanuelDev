@@ -1,7 +1,21 @@
 import ProjectCard from "@/components/ProjectCard";
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Projects() {
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    axios
+    .get("https://api.github.com/users/Lenoxo/repos")
+    .then(function (response) {
+      setProjects(response.data)
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }, [])
+  
   // For now, I'll have this array for experimenting with the cards.
   const projectsData = [
     {
@@ -23,11 +37,12 @@ export default function Projects() {
       repository: "hi",
     },
   ];
+  
   return (
     <div className="h-screen flex flex-col pt-16 items-center">
       <h2 className="text-2xl font-bold mb-8 mt-2">My Projects</h2>
       <section>
-        {projectsData.map((project, index) => (
+        {projects?.map((project, index) => (
           <ProjectCard key={index} projectData={project} />
         ))}
       </section>
