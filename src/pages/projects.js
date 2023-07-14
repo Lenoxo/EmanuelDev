@@ -4,7 +4,7 @@ import projectsData from "@/data";
 export default function Projects() {
   const projects = projectsData    
   return (
-    <div className="h-screen flex flex-col pt-16 items-center">
+    <div className="h-auto flex flex-col pt-16 items-center">
       <h2 className="text-2xl font-bold mb-8 mt-2">My Projects</h2>
       <section>
         {projects?.map((project, index) => (
