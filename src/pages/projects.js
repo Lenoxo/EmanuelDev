@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import projectsData from "@/data/projectsData";";
+import projectsData from "@/data/projectsData";
 
 export default function Projects() {
   const projects = projectsData    
