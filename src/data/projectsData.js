@@ -10,6 +10,7 @@ class Project {
   }
 }
 
+// Projects instancies
 const Reactify = new Project(
   "Reactify",
   "https://imgur.com/QhF9iXk.png",
@@ -58,7 +59,7 @@ projectsData.push(AsyncLanding);
 const Mokepon = new Project(
   "Mokepon",
   "https://imgur.com/Ys2PHD8.png",
-  "Small video-game like Pokemon, made with pure HTML, CSS and JavaScript. Also, uses a nodejs local server. It's made for 2 players.",
+  "Small video-game like Pokemon, made with pure HTML, CSS and JavaScript. Also, uses a nodejs local server. It's made for 2 players. It's also my first project.",
   "",
   "https://github.com/Lenoxo/Mokepon-project"
 );
@@ -69,8 +70,17 @@ const EmanuelDev = new Project(
   "image",
   "Is this website, built using Next.js",
   "",
-  "https://github.com/Lenoxo/emanueldev",
-)
-projectsData.push(EmanuelDev)
+  "https://github.com/Lenoxo/emanueldev"
+);
+projectsData.push(EmanuelDev);
+
+const YardSale = new Project(
+  "YardSale draft",
+  "https://i.imgur.com/azlBGID.png",
+  "This is the draft of a YardSale website main page, built using HTML, CSS and JavaScript.",
+  "https://lenoxo.github.io/YardSale/",
+  "https://github.com/Lenoxo/YardSale"
+);
+projectsData.push(YardSale);
 
 export default projectsData;

@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import projectsData from "@/data";
+import projectsData from "@/data/projectsData";
 
 export default function TopProjects() {
   return (
