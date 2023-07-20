@@ -4,6 +4,46 @@ const certificatesData = [
       previewUrl: "https://via.placeholder.com/340",
     },
     {
+      name: "Documento 2 aslkdjfalskjdflksajdlksjlkfd",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
+      name: "Documento 2",
+      previewUrl: "https://via.placeholder.com/280",
+    },
+    {
       name: "Documento 2",
       previewUrl: "https://via.placeholder.com/280",
     },

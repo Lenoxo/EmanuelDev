@@ -5,7 +5,7 @@ export default function ProjectDetail({ projectData }) {
   const { title, image, description, repository, deploy } = projectData;
   return (
     <aside className="w-full h-full flex flex-col justify-center space-y-4">
-      <h3 className="text-md font-bold px-3">{title}</h3>
+      <h3 className="text-md font-bold text-center">{title}</h3>
       <img src={image} className="rounded-lg" alt={title} />
       <p className="px-3 text-sm">{description}</p>
       <div className="flex flex-row-reverse justify-between px-3">
