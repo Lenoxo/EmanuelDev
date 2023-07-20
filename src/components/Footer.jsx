@@ -1,17 +1,21 @@
+import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
-    <footer className="h-auto w-full bg-sky-300 p-4">
-      <h3 id="contact-me" className="text-xl">Contact Me</h3>
-      <div className="flex justify-between pl-2">
-        <div className="flex flex-col justify-around font-semibold">
-          <a href="mailto:emauehl159@gmail.com">emauehl159@gmail.com</a>
-          <a href="tel:+573202081202">+57 320 2081202</a>
-        </div>
-        <div className="flex flex-col justify-between space-y-2">
-          <BsGithub className="w-8 h-auto cursor-pointer" />
-          <BsLinkedin className="w-8 h-auto cursor-pointer" />
-        </div>
+    <footer className="h-auto w-full bg-sky-300 p-4 flex flex-col items-center justify-center space-y-4">
+      <h3 id="contact-me" className="text-md font-semibold">
+        Contact Me
+      </h3>
+      <Link href="mailto:emauehl159@gmail.com" className="text-sm">
+        emauehl159@gmail.com
+      </Link>
+      <div className="w-20 flex justify-between">
+        <Link href="https://github.com/Lenoxo">
+          <BsGithub className="w-6 h-auto" />
+        </Link>
+        <Link href="https://www.linkedin.com/in/angel-emanuel-aa25041a8/">
+          <BsLinkedin className="w-6 h-auto" />
+        </Link>
       </div>
     </footer>
   );
