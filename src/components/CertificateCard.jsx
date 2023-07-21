@@ -15,7 +15,7 @@ const CertificateCard = ({ name, previewUrl }) => {
         </button>
       </figure>
       <div className="p-4 h-auto w-full">
-        <p className="text-gray-800 text-base font-bold">{name}</p>
+        <h3 className="text-gray-800 text-base font-semibold">{name}</h3>
         <div className="flex items-center justify-center mt-2">
         </div>
       </div>

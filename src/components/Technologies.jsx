@@ -12,20 +12,20 @@ import { SiNextdotjs, SiVite } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
 const TechnologyIcon = ({ Icon, name }) => (
-  <div className="flex flex-col items-center">
-    <Icon className="w-12 h-auto hover:w-20 transition-all ease-in-out duration-300" />
-    <p className="text-sm text-center font-semibold">{name}</p>
+  <div className="flex flex-col items-center text-sm w-12 hover:w-20 transition-all ease-in-out hover:text-xl">
+    <Icon className="w-full h-auto" />
+    <p className="text-center font-semibold">{name}</p>
   </div>
 );
 
 export default function Technologies() {
   return (
-    <section className="h-[85vh] bg-sky-300 flex flex-col items-center justify-around">
+    <section className="h-[85vh] bg-green-300 flex flex-col items-center justify-around">
       <h2 className="text-lg font-bold">Technologies</h2>
 
       <div>
         <h3 className="text-md text-center font-semibold">Fundamentals</h3>
-        <div className="grid grid-cols-3 gap-4 mt-4">
+        <div className="grid grid-cols-3 mt-4 gap-4">
           <TechnologyIcon Icon={IoLogoHtml5} name="HTML 5" />
           <TechnologyIcon Icon={IoLogoCss3} name="CSS 3" />
           <TechnologyIcon Icon={IoLogoJavascript} name="JavaScript" />
