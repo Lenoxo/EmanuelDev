@@ -11,6 +11,10 @@ export default function ProjectsPage() {
           <ProjectCard key={index} projectData={project} />
         ))}
       </section>
+      <figure>
+        <h2 className="text-center">And that's the end for now...</h2>
+        <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="cat.gif" className="w-60 h-60 rounded-lg object-cover mb-4"/>
+      </figure>
     </div>
   );
 }

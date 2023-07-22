@@ -3,7 +3,7 @@ import DarkModeButton from "./DarkModeButton";
 import Link from "next/link";
 export default function Header({ setShowMobileMenu, showMobileMenu }) {
   return (
-    <header className="fixed z-20 min-w-full bg-white dark:bg-zinc-800 border-zinc-400 border-b-[1px] py-4 text-lg sm:text-[16px] sm:px-4 sm:flex sm:items-center sm:justify-between dark:text-inherit">
+    <header className="fixed z-20 min-w-full bg-white dark:bg-zinc-800 border-zinc-400 border-b-[1px] py-4 text-lg sm:text-md sm:px-4 sm:flex sm:items-center sm:justify-between dark:text-inherit">
       <p className="text-center font-bold md:text-start">Emanuel Padilla</p>
       <FaBars
         className="absolute top-4 left-4 w-7 h-auto sm:hidden"
@@ -22,7 +22,7 @@ export default function Header({ setShowMobileMenu, showMobileMenu }) {
         <li className="hover:text-green-300 dark:hover:text-sky-300">
           <Link href="#contact-me">Contact Me</Link>
         </li>
-        <p className="hover:text-green-300 dark:hover:text-sky-300">Download CV</p>
+        <p className="hover:text-green-300 dark:hover:text-sky-300">CV</p>
         <DarkModeButton />
       </ul>
     </header>
