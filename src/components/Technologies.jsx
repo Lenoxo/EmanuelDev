@@ -20,7 +20,7 @@ const TechnologyIcon = ({ Icon, name }) => (
 
 export default function Technologies() {
   return (
-    <section className="h-[85vh] bg-green-300 flex flex-col items-center justify-around">
+    <section className="h-[85vh] bg-green-300 dark:bg-gray-800 flex flex-col items-center justify-around">
       <h2 className="text-lg font-bold">Technologies</h2>
 
       <div>

@@ -3,7 +3,7 @@ import StyledLink from "./StyledLink";
 
 export default function Footer() {
   return (
-    <footer className="h-auto w-full border border-t-inherit bg-gradient-to-tr from-zinc-400 via-white to-zinc-50 p-4 flex flex-col items-center justify-center space-y-4">
+    <footer className="h-auto w-full bg-gradient-to-tr from-zinc-400 via-white to-zinc-50 dark:from-gray-800 dark:to-gray-600 p-4 flex flex-col items-center justify-center space-y-4">
       <h3 id="contact-me" className="text-md font-semibold">
         Contact Me
       </h3>
