@@ -1,6 +1,20 @@
 import { Fragment, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { Montserrat, Crimson_Pro } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+const crimson_pro = Crimson_Pro({
+  subsets: ["latin"],
+  variable: "--font-crimson-pro",
+  display: "swap",
+});
+
 export default function Modal({ open, setOpen, children }) {
   const cancelButtonRef = useRef(null);
   return (
@@ -29,7 +43,7 @@ export default function Modal({ open, setOpen, children }) {
                 </button>
               </div>
               <div className="bg-white px-4 pt-2 pb-4 sm:px-6 sm:pb-4">
-                <div className="sm:flex sm:items-start">{children}</div>
+                <div className={`sm:flex sm:items-start ${montserrat.variable} ${crimson_pro.className}`}>{children}</div>
               </div>
             </div>
           </Transition.Child>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 import projectsData from "@/data/projectsData";
 import { BiLinkExternal } from "react-icons/bi";
+import StyledLink from "./StyledLink";
 
 export default function TopProjects() {
   return (
@@ -13,13 +14,13 @@ export default function TopProjects() {
             <ProjectCard key={index} projectData={project} />
           ))}
         </div>
-        <Link
-          href="/projects"
-          className="font-semibold mt-8 sm:mt-0 text-center w-auto flex space-x-1 border rounded-lg py-1 px-3 border-zinc-400 hover:bg-zinc-300"
+        <StyledLink
+          to="/projects"
+          addStyle="font-semibold mt-8 sm:mt-0 p-2 w-auto"
         >
           <p>See All Projects</p>
-          <BiLinkExternal className="w-6 h-auto" />
-        </Link>
+          <BiLinkExternal className="w-6 ml-2 h-auto" />
+        </StyledLink>
       </section>
     </>
   );

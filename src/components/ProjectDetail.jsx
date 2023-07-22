@@ -1,5 +1,6 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import StyledLink from "./StyledLink";
 
 export default function ProjectDetail({ projectData }) {
   const { title, image, description, repository, deploy } = projectData;
@@ -10,19 +11,19 @@ export default function ProjectDetail({ projectData }) {
       <p className="px-3 text-sm">{description}</p>
       <div className="flex flex-row-reverse justify-between px-3">
         {deploy && (
-          <a
-            href={deploy}
-            className="bg-green-300 rounded-lg p-3 text-sm font-semibold flex items-center"
+          <StyledLink
+            to={deploy}
+            addStyle="p-3 text-sm font-semibold w-auto items-center"
           >
             Demo <BiLinkExternal className="ml-1 w-4 h-auto" />
-          </a>
+          </StyledLink>
         )}
-        <a
-          href={repository}
-          className="bg-green-300 rounded-lg p-3 text-sm font-semibold flex items-center"
+        <StyledLink
+          to={repository}
+          addStyle="p-3 text-sm font-semibold w-auto items-center"
         >
           Repository <BsGithub className="ml-1 w-4 h-auto" />
-        </a>
+        </StyledLink>
       </div>
     </aside>
   );
