@@ -20,7 +20,6 @@ export default function MobileMenu({ setShowMobileMenu }) {
         <div className="flex flex-col items-center w-full h-1/3 justify-between">
           <LinkItem href='/' name='Home' handleClick={hideMobileMenu}/>
           <LinkItem href='/projects' name='Projects' handleClick={hideMobileMenu}/>
-          <LinkItem href='/certifications' name='Certifications' handleClick={hideMobileMenu}/>
         </div>
         <DarkModeButton />
         <LinkItem href='#contact-me' name='Contact Me' handleClick={hideMobileMenu} />
