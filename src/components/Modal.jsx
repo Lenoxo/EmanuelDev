@@ -1,18 +1,18 @@
 import { Fragment, useRef } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { AiOutlineCloseCircle } from 'react-icons/ai'
-import { Montserrat, Crimson_Pro } from "next/font/google";
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { Montserrat, Crimson_Pro } from 'next/font/google';
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
 });
 
 const crimson_pro = Crimson_Pro({
-  subsets: ["latin"],
-  variable: "--font-crimson-pro",
-  display: "swap",
+  subsets: ['latin'],
+  variable: '--font-crimson-pro',
+  display: 'swap',
 });
 
 export default function Modal({ open, setOpen, children }) {

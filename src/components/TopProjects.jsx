@@ -1,8 +1,7 @@
-import Link from "next/link";
-import ProjectCard from "./ProjectCard";
-import projectsData from "@/data/projectsData";
-import { BiLinkExternal } from "react-icons/bi";
-import StyledLink from "./StyledLink";
+import ProjectCard from './ProjectCard';
+import projectsData from '@/data/projectsData';
+import { BiLinkExternal } from 'react-icons/bi';
+import StyledLink from './StyledLink';
 
 export default function TopProjects() {
   return (
@@ -14,10 +13,7 @@ export default function TopProjects() {
             <ProjectCard key={index} projectData={project} />
           ))}
         </div>
-        <StyledLink
-          to="/projects"
-          addStyle="font-semibold mt-8 sm:mt-0 p-2 w-auto"
-        >
+        <StyledLink to="/projects" addStyle="font-semibold mt-8 sm:mt-0 p-2 w-auto">
           <p>See All Projects</p>
           <BiLinkExternal className="w-6 ml-2 h-auto" />
         </StyledLink>

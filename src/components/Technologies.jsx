@@ -25,7 +25,7 @@ export default function Technologies() {
 
       <div>
         <h3 className="text-md text-center font-semibold">Fundamentals</h3>
-        <div className="grid grid-cols-3 mt-4 gap-4">
+        <div className="grid grid-cols-3 mt-4 space-x-4 space-x-reverse">
           <TechnologyIcon Icon={IoLogoHtml5} name="HTML 5" />
           <TechnologyIcon Icon={IoLogoCss3} name="CSS 3" />
           <TechnologyIcon Icon={IoLogoJavascript} name="JavaScript" />

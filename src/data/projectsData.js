@@ -67,7 +67,7 @@ projectsData.push(Mokepon);
 
 const EmanuelDev = new Project(
   "EmanuelDev",
-  "image",
+  "",
   "Is this website, built using Next.js",
   "",
   "https://github.com/Lenoxo/emanueldev"
@@ -76,7 +76,7 @@ projectsData.push(EmanuelDev);
 
 const YardSale = new Project(
   "YardSale draft",
-  "https://i.imgur.com/azlBGID.png",
+  "https://imgur.com/azlBGID.png",
   "This is the draft of a YardSale website main page, built using HTML, CSS and JavaScript.",
   "https://lenoxo.github.io/YardSale/",
   "https://github.com/Lenoxo/YardSale"
