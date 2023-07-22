@@ -8,14 +8,10 @@ export default function Footer() {
         Contact Me
       </h3>
       <div className="w-60 flex justify-between mt-4">
-        <StyledLink
-          to="https://github.com/Lenoxo"
-        >
+        <StyledLink to="https://github.com/Lenoxo">
           <BsGithub className="w-6 h-auto" />
         </StyledLink>
-        <StyledLink
-          to="https://www.linkedin.com/in/angel-emanuel-aa25041a8/"
-        >
+        <StyledLink to="https://www.linkedin.com/in/angel-emanuel-aa25041a8/">
           <BsLinkedin className="w-6 h-auto" />
         </StyledLink>
       </div>

@@ -5,5 +5,5 @@ export const phrasesArray = [
   "with Next.js",
   "with Vite.js",
   "with Tailwind CSS",
-  "with Next.js",
+  "learning more everyday",
 ];
