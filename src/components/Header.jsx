@@ -17,9 +17,6 @@ export default function Header({ setShowMobileMenu, showMobileMenu }) {
           <Link href="/projects">Projects</Link>
         </li>
         <li className="hover:text-green-300 dark:hover:text-sky-300">
-          <Link href="/certifications">Certifications</Link>
-        </li>
-        <li className="hover:text-green-300 dark:hover:text-sky-300">
           <Link href="#contact-me">Contact Me</Link>
         </li>
         <p className="hover:text-green-300 dark:hover:text-sky-300">CV</p>
