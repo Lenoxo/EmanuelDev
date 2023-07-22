@@ -1,20 +1,26 @@
-import React from "react";
+import Link from "next/link";
 import ProjectCard from "./ProjectCard";
-import projectsData from "@/data";
+import projectsData from "@/data/projectsData";
+import { BiLinkExternal } from "react-icons/bi";
+import StyledLink from "./StyledLink";
 
 export default function TopProjects() {
-  // For now, I'll have this array for experimenting with the cards.
-  console.log(projectsData)
   return (
     <>
-      <section className="w-full h-screen bg-white flex flex-col p-4">
-        <h2 className="text-center font-bold text-2xl">Top Recent Projects</h2>
-        <div className="w-auto h-full mt-8 flex flex-col items-center space-y-4 overflow-y-auto">
-          {/* Later, abstract this div to a component */}
-          {projectsData.map((project, index) => (
+      <section className="h-screen bg-inherit flex flex-col p-4 lg:h-auto items-center">
+        <h2 className="text-center font-bold text-lg">Top Recent Projects</h2>
+        <div className="w-auto h-auto mt-8 grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center overflow-y-auto">
+          {projectsData.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} projectData={project} />
           ))}
         </div>
+        <StyledLink
+          to="/projects"
+          addStyle="font-semibold mt-8 sm:mt-0 p-2 w-auto"
+        >
+          <p>See All Projects</p>
+          <BiLinkExternal className="w-6 ml-2 h-auto" />
+        </StyledLink>
       </section>
     </>
   );

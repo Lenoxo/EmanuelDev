@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 body {
-  font-family: "Merriweather", serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--font-crimson-pro);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-montserrat);
 }

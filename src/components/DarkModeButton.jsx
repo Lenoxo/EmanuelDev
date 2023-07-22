@@ -7,7 +7,7 @@ export default function DarkModeButton() {
 
   return (
     <button onClick={handleDarkModeToggle}>
-      <RiMoonClearLine className="w-10 h-auto text-inherit" />
+      <RiMoonClearLine className="w-10 sm:w-6 h-auto text-inherit hover:text-green-300 dark:hover:text-sky-300" />
     </button>
   );
 }

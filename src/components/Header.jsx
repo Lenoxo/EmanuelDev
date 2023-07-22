@@ -1,19 +1,29 @@
 import { FaBars } from "react-icons/fa";
 import DarkModeButton from "./DarkModeButton";
+import Link from "next/link";
 export default function Header({ setShowMobileMenu, showMobileMenu }) {
   return (
-    <header className="fixed z-10 min-w-full bg-white border-zinc-400 border-b-[1px] py-4 text-lg">
-      <p className="text-center font-bold md:text-start">
-        Emanuel Padilla
-      </p>
-      <FaBars className="absolute top-4 left-4 w-7 h-auto text-black dark:text-inherit" onClick={() => setShowMobileMenu(!showMobileMenu)}/>
-      <ul className="hidden text-sm">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Certifications</li>
+    <header className="fixed z-20 min-w-full bg-white dark:bg-zinc-800 border-zinc-400 border-b-[1px] py-4 text-lg sm:text-md sm:px-4 sm:flex sm:items-center sm:justify-between dark:text-inherit">
+      <p className="text-center font-bold md:text-start">Emanuel Padilla</p>
+      <FaBars
+        className="absolute top-4 left-4 w-7 h-auto sm:hidden"
+        onClick={() => setShowMobileMenu(!showMobileMenu)}
+      />
+      <ul className="hidden sm:flex items-center sm:space-x-4">
+        <li className="hover:text-green-300 dark:hover:text-sky-300">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="hover:text-green-300 dark:hover:text-sky-300">
+          <Link href="/projects">Projects</Link>
+        </li>
+        <li className="hover:text-green-300 dark:hover:text-sky-300">
+          <Link href="/certifications">Certifications</Link>
+        </li>
+        <li className="hover:text-green-300 dark:hover:text-sky-300">
+          <Link href="#contact-me">Contact Me</Link>
+        </li>
+        <p className="hover:text-green-300 dark:hover:text-sky-300">CV</p>
         <DarkModeButton />
-        <li>Contact Me</li>
-        <li>Download CV</li>
       </ul>
     </header>
   );
