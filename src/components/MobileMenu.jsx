@@ -2,7 +2,7 @@ import DarkModeButton from "./DarkModeButton";
 import { BiChevronRight } from "react-icons/bi";
 import Link from "next/link";
 
-export default function MobileMenu({ setShowMobileMenu }) {
+export default function MobileMenu({ setShowMobileMenu, showMobileMenu }) {
   const navHeight = {
     height: "calc(100vh - 3.75rem)",
   };
@@ -15,7 +15,8 @@ export default function MobileMenu({ setShowMobileMenu }) {
     <>
       <nav
         style={navHeight}
-        className="fixed z-30 flex flex-col w-full top-14 mt-[0.3rem] p-8 bg-white dark:bg-zinc-900 items-start text-start justify-between font-semibold text-lg"
+        // Aquí uso -left-full para ocultar la nav, y cuando showMobileMenu sea true, se muestre con left-0 
+        className={`fixed z-30 flex flex-col transition-all ease-in-out w-full top-14 mt-[0.3rem] p-8 bg-white dark:bg-zinc-900 items-start text-start justify-between font-semibold text-lg ${showMobileMenu ? "left-0" : "-left-full"}`}
       >
         <LinkItem href="/" name="Home" handleClick={hideMobileMenu} />
         <LinkItem

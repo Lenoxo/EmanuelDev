@@ -24,7 +24,7 @@ export default function MainLayout({ children }) {
         setShowMobileMenu={setShowMobileMenu}
         showMobileMenu={showMobileMenu}
       />
-      {showMobileMenu && <MobileMenu setShowMobileMenu={setShowMobileMenu} />}
+      <MobileMenu setShowMobileMenu={setShowMobileMenu} showMobileMenu={showMobileMenu} />
       <main>{children}</main>
       <Footer />
     </div>
