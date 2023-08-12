@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EmanuelDev
 
-## Getting Started
+EmanuelDev is a personal portfolio site developed using React with Next.js and styled with TailwindCSS. The website showcases my projects and skills and includes the following features:
 
-First, run the development server:
+- **Integrated Dark Mode:** The website offers a built-in dark mode feature that enhances the user experience in low-light environments.
+- **Responsive Design:** EmanuelDev Website is designed to be fully responsive, ensuring an optimal experience across different devices and screen sizes.
+- **Link to My CV:** The website provides a link to my Curriculum Vitae for those interested in learning more about my professional background.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Table of Contents:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Useful Resources](#useful-resources)
+- [License](#license)
+- [Author](#author)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Demo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![EmanuelDev Website Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW12ajgyMXY0dmFqN2EyYWttYzA5Z2E0N203Zzl5a3JlcjQ0NjFidiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ag73Ld0v2SLjX2z9EI/giphy.gif)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### [View it online!](https://emanueldev.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Features
 
-## Learn More
+- **Integrated Dark Mode:** EmanuelDev Website features an integrated dark mode option that creates a comfortable viewing experience in low-light conditions.
+- **Responsive Design:** The website is designed responsively, ensuring optimal performance and layout on various devices and screen sizes.
+- **Link to My CV:** A link is provided to my Curriculum Vitae for individuals interested in exploring my professional qualifications.
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To locally install and run EmanuelDev Website, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository: `git clone [repository URL]`
+2. Navigate to the project directory: `cd EmanuelDev`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your web browser and visit `http://localhost:3000` to access EmanuelDev Website.
 
-## Deploy on Vercel
+### Useful Resources
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **[Official Next.js Documentation](https://nextjs.org/)**: Essential resource for learning about Next.js and its capabilities.
+- **[TailwindCSS Documentation](https://tailwindcss.com/)**: Official documentation for TailwindCSS, a versatile CSS framework.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### License
+
+This project is licensed under the [MIT License](LICENSE).
+
+### Author
+
+Lenoxo (Emanuel Padilla)
+
+Feel free to reach out to me at [emanuehl159@gmail.com](mailto:emanuehl159@gmail.com) for any inquiries, suggestions, or comments.
