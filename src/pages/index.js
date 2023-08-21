@@ -11,7 +11,7 @@ export default function Home() {
     loop: 0,
     typeSpeed: 130,
   });
-  
+
   return (
     <>
       <div className="h-screen bg-gradient-to-tr from-zinc-600 to-zinc-800 dark:from-gray-900 dark:to-gray-600">
@@ -25,7 +25,7 @@ export default function Home() {
           >
             <h2 className="text-inherit sm:text-zinc-100 text-xl text-center sm:text-start sm:text-4xl font-semibold sm:w-[7.5rem] py-4">
               I code
-              <span className="text-green-400 font-bold text-xl sm:text-4xl">
+              <span className="text-green-400 dark:text-sky-400 font-bold text-xl sm:text-4xl">
                 {" "}
                 {writingText}
               </span>

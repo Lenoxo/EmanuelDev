@@ -9,7 +9,7 @@ export default function ProjectCard({ projectData }) {
   const { image, title } = projectData;
   const cardRef = useRef(null);
 
-  // This useEffect observes when a Card is within the viewport, and if it is, adds a tailwind class to show it.
+  // This useEffect observes when a Card is within the viewport, and if it is, modifies tailwind classes to show it.
   useEffect(() => {
     const currentCard = cardRef.current;
     const observerOptions = {
@@ -21,8 +21,9 @@ export default function ProjectCard({ projectData }) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          currentCard.classList.add("opacity-100"); // Aplica la clase de Tailwind CSS
-          currentCard.classList.remove("-translate-x-6"); // Aplica la clase de Tailwind CSS
+          // Here add / remove tailwind classes to currentCard, doing the entry animation.
+          currentCard.classList.add("opacity-100");
+          currentCard.classList.remove("-translate-x-6");
         }
       });
     }, observerOptions);
@@ -39,10 +40,9 @@ export default function ProjectCard({ projectData }) {
   }, []);
 
   return (
-    // Review later if this is coherent
     <article
       ref={cardRef}
-      className="w-60 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-500 -translate-x-6"
+      className="w-60 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
     >
       <figure className="w-full h-40">
         <Image
