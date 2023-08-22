@@ -12,7 +12,7 @@ import { SiNextdotjs, SiVite } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
 const TechnologyIcon = ({ Icon, name }) => (
-  <div className="flex flex-col items-center text-sm w-12 hover:w-20 transition-all ease-in-out hover:text-xl">
+  <div className="flex flex-col items-center text-sm w-12 hover:w-20 transition-all ease-in-out hover:text-xl duration-200">
     <Icon className="w-full h-auto" />
     <p className="text-center font-semibold">{name}</p>
   </div>
