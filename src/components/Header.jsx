@@ -22,7 +22,7 @@ export default function Header({ setShowMobileMenu, showMobileMenu }) {
         </li>
         <li className="hover:text-green-300 dark:hover:text-sky-300">
           <Link
-            href="https://drive.google.com/file/d/1D2D_u1Uv2l-LdQE1iFkaADZ-TjcLcLpE/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ykg2nwrn3G1ulqyATuiJ8IXzV0_eWN6T/view?usp=drive_link"
             className="flex gap-2"
           >
             CV{" "}
