@@ -5,7 +5,6 @@ import {
   IoLogoJavascript,
   IoLogoReact,
   IoLogoNpm,
-  IoLogoSass,
 } from "react-icons/io5";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiNextdotjs, SiVite } from "react-icons/si";
@@ -50,7 +49,6 @@ export default function Technologies() {
         <h3 className="text-md text-center font-semibold">CSS</h3>
         <div className="flex space-x-4 mt-4">
           <TechnologyIcon Icon={BiLogoTailwindCss} name="Tailwind CSS" />
-          <TechnologyIcon Icon={IoLogoSass} name="Sass" />
         </div>
       </div>
     </section>
