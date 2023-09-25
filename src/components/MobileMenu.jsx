@@ -31,7 +31,7 @@ export default function MobileMenu({ setShowMobileMenu, showMobileMenu }) {
           handleClick={hideMobileMenu}
         />
         <LinkItem
-          href="https://drive.google.com/file/d/1D2D_u1Uv2l-LdQE1iFkaADZ-TjcLcLpE/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Ykg2nwrn3G1ulqyATuiJ8IXzV0_eWN6T/view?usp=drive_link"
           name="Download CV"
           handleClick={hideMobileMenu}
         />
