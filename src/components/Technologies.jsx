@@ -6,8 +6,8 @@ import {
   IoLogoReact,
   IoLogoNpm,
 } from "react-icons/io5";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { SiNextdotjs, SiVite } from "react-icons/si";
+import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
+import { SiNextdotjs, SiVite, SiExpress } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
 const TechnologyIcon = ({ Icon, name }) => (
@@ -34,21 +34,45 @@ export default function Technologies() {
         </div>
       </div>
 
-      <div>
-        <h3 className="text-md text-center font-semibold">
-          JS Libraries and Frameworks
-        </h3>
-        <div className="flex space-x-4 mt-4 justify-center">
-          <TechnologyIcon Icon={IoLogoReact} name="React" />
-          <TechnologyIcon Icon={SiNextdotjs} name="Next.js" />
-          <TechnologyIcon Icon={SiVite} name="Vite.js" />
-        </div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="flex flex-col items-center space-y-2">
+          <h3 className="mb-2 text-md font-semibold">Frontend</h3>
+          <div>
+            <h3 className="text-md text-center font-semibold">
+              JS Libraries and Frameworks
+            </h3>
+            <div className="flex space-x-4 mt-4 justify-center">
+              <TechnologyIcon Icon={IoLogoReact} name="React" />
+              <TechnologyIcon Icon={SiNextdotjs} name="Next.js" />
+              <TechnologyIcon Icon={SiVite} name="Vite.js" />
+            </div>
+          </div>
 
-      <div>
-        <h3 className="text-md text-center font-semibold">CSS</h3>
-        <div className="flex space-x-4 mt-4">
-          <TechnologyIcon Icon={BiLogoTailwindCss} name="Tailwind CSS" />
+          <div>
+            <h3 className="text-md text-center font-semibold">CSS</h3>
+            <div className="flex space-x-4 mt-4">
+              <TechnologyIcon Icon={BiLogoTailwindCss} name="Tailwind CSS" />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center space-y-2">
+          <h3 className="mb-2 text-md font-semibold">Backend</h3>
+          <div>
+            <h3 className="text-md text-center font-semibold">
+              Node.js Framework
+            </h3>
+            <div className="flex space-x-4 mt-4 justify-center">
+              <TechnologyIcon Icon={SiExpress} name="Express.js" />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-md text-center font-semibold">DataBase</h3>
+            <div className="flex space-x-4 mt-4 justify-center">
+              <TechnologyIcon Icon={BiLogoPostgresql} name="PostgreSQL" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
