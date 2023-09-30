@@ -7,7 +7,7 @@ import {
   IoLogoNpm,
 } from "react-icons/io5";
 import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
-import { SiNextdotjs, SiVite, SiExpress } from "react-icons/si";
+import { SiNextdotjs, SiVite, SiExpress, SiSequelize } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
 const TechnologyIcon = ({ Icon, name }) => (
@@ -19,7 +19,7 @@ const TechnologyIcon = ({ Icon, name }) => (
 
 export default function Technologies() {
   return (
-    <section className="min-h-[85vh] bg-green-300 dark:bg-gray-800 flex flex-col items-center justify-around">
+    <section className="min-h-[85vh] py-12 bg-green-300 dark:bg-gray-800 flex flex-col items-center space-y-4">
       <h2 className="text-lg font-bold">Technologies</h2>
 
       <div>
@@ -60,10 +60,11 @@ export default function Technologies() {
           <h3 className="mb-2 text-md font-semibold">Backend</h3>
           <div>
             <h3 className="text-md text-center font-semibold">
-              Node.js Framework
+              Node.js Framework and ORM
             </h3>
             <div className="flex space-x-4 mt-4 justify-center">
               <TechnologyIcon Icon={SiExpress} name="Express.js" />
+              <TechnologyIcon Icon={SiSequelize} name="Sequelize" />
             </div>
           </div>
 

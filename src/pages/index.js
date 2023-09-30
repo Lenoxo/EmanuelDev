@@ -38,8 +38,9 @@ export default function Home() {
           <h2 className="text-md w-5/6 text-center sm:text-start">
             Proficient in HTML, CSS, JavaScript, and React. I work with
             libraries like Vite.js and Next.js and have backend experience with
-            Node.js, Express.js, and PostgresSQL. I'm passionate about coding,
-            innovation, and continuous learning in tech.
+            Node.js, Express.js, and PostgresSQL. I am on a relentless journey
+            to develop innovative ideas and embrace continuous learning in the
+            world of technology.
           </h2>
           <div className="w-60 flex justify-between mt-4">
             <StyledLink to="https://github.com/Lenoxo">
