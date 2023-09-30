@@ -36,11 +36,10 @@ export default function Home() {
           </div>
           {/* Later on, change this for a short paragraph explaining what you do. */}
           <h2 className="text-md w-5/6 text-center sm:text-start">
-            With knowledge in HTML, CSS, JavaScript, and React, proficient in
-            utilizing libraries and frameworks such as Vite.js and Next.js. And
-            with knowledge in Node.js, Express.js, and PostgresSQL. Empowered by
-            code, I am on a relentless journey to develop innovative ideas and
-            embrace continuous learning in the world of technology.
+            Proficient in HTML, CSS, JavaScript, and React. I work with
+            libraries like Vite.js and Next.js and have backend experience with
+            Node.js, Express.js, and PostgresSQL. I'm passionate about coding,
+            innovation, and continuous learning in tech.
           </h2>
           <div className="w-60 flex justify-between mt-4">
             <StyledLink to="https://github.com/Lenoxo">
