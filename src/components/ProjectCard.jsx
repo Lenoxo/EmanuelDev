@@ -43,7 +43,7 @@ export default function ProjectCard({ projectData }) {
   return (
     <article
       ref={cardRef}
-      className="w-60 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
+      className="w-64 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
     >
       <figure className="w-full h-40 relative">
         <Image
@@ -53,9 +53,9 @@ export default function ProjectCard({ projectData }) {
           className="w-full h-4/5 object-cover rounded-t-lg"
           alt={title}
         />
-      <div className="absolute w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
+      <div className="w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
         {technologiesUsed?.map((technology) => {
-          return <p className="rounded-full text-sm border border-zinc-400 px-1 h-6">{technology}</p> 
+          return <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 h-6">{technology}</p> 
         })}
       </div>  
       </figure>
