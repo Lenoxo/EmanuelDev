@@ -1,12 +1,13 @@
 let projectsData = [];
 
 class Project {
-  constructor(title, image, description, deploy, repository) {
+  constructor(title, image, description, deploy, repository, technologiesUsed) {
     this.title = title;
     this.image = image;
     this.description = description;
     this.deploy = deploy;
     this.repository = repository;
+    this.technologiesUsed = technologiesUsed || []
   }
 }
 
@@ -17,6 +18,7 @@ const Reactify = new Project(
   "This is an Ecommerce made with React.js, Next.js and TailwindCSS, with multiple features like PWA, User Authentication, Product Filtering, and much more!",
   "https://reactify-nextjs.vercel.app/",
   "https://github.com/Lenoxo/reactify-nextjs",
+  ["React.js", "TailwindCSS", "Next.js"]
 );
 projectsData.push(Reactify);
 

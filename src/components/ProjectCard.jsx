@@ -6,8 +6,9 @@ import Image from "next/image";
 
 export default function ProjectCard({ projectData }) {
   const [open, setOpen] = useState(false);
-  const { image, title } = projectData;
+  const { image, title, technologiesUsed } = projectData;
   const cardRef = useRef(null);
+  console.log(technologiesUsed)
 
   // This useEffect observes when a Card is within the viewport, and if it is, modifies tailwind classes to show it.
   useEffect(() => {
@@ -60,6 +61,12 @@ export default function ProjectCard({ projectData }) {
         <h3>{title}</h3>
         <BsThreeDots className="w-6 h-auto border border-zinc-400 p-1 rounded-full" />
       </button>
+      <div>
+
+      {technologiesUsed?.map((technology) => {
+        return <p>{technology}</p> 
+      })}
+      </div>
       <Modal open={open} setOpen={setOpen}>
         <ProjectDetail projectData={projectData} />
       </Modal>
