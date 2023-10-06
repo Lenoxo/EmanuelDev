@@ -45,14 +45,19 @@ export default function ProjectCard({ projectData }) {
       ref={cardRef}
       className="w-60 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
     >
-      <figure className="w-full h-40">
+      <figure className="w-full h-40 relative">
         <Image
           width={240}
           height={160}
           src={image}
-          className="w-full h-full object-cover rounded-t-lg"
+          className="w-full h-4/5 object-cover rounded-t-lg"
           alt={title}
         />
+      <div className="absolute w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
+        {technologiesUsed?.map((technology) => {
+          return <p className="rounded-full text-sm border border-zinc-400 px-1 h-6">{technology}</p> 
+        })}
+      </div>  
       </figure>
       <button
         className="w-full font-semibold text-sm p-3 flex items-center justify-between"
@@ -63,9 +68,6 @@ export default function ProjectCard({ projectData }) {
       </button>
       <div>
 
-      {technologiesUsed?.map((technology) => {
-        return <p>{technology}</p> 
-      })}
       </div>
       <Modal open={open} setOpen={setOpen}>
         <ProjectDetail projectData={projectData} />
