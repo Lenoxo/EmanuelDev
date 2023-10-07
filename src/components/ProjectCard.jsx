@@ -51,7 +51,7 @@ export default function ProjectCard({ projectData }) {
           src={image}
           className="w-full h-full object-cover rounded-t-lg"
           alt={title}
-          sizes="25vw"
+          sizes="80vw (min-width: 768px) 60vw, (min-width: 1200px) 25vw"
         />
       </figure>
       <div className="w-full h-10 px-2 pt-2 overflow-hidden opacity-100">
