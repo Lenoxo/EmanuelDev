@@ -4,7 +4,6 @@ import {
   IoLogoNodejs,
   IoLogoJavascript,
   IoLogoReact,
-  IoLogoNpm,
 } from "react-icons/io5";
 import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
 import { SiNextdotjs, SiExpress, SiSequelize } from "react-icons/si";
@@ -17,7 +16,7 @@ class Project {
     this.description = description;
     this.deploy = deploy;
     this.repository = repository;
-    this.technologiesUsed = technologiesUsed || []
+    this.technologiesUsed = technologiesUsed || [];
   }
 }
 
