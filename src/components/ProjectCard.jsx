@@ -53,7 +53,7 @@ export default function ProjectCard({ projectData }) {
           alt={title}
         />
       </figure>
-      <div className="w-full min-h-10 px-2 pt-2 opacity-100">
+      <div className="w-full h-10 px-2 pt-2 overflow-hidden opacity-100">
         {technologiesUsed?.map((technology) => {
           return (
             <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 inline-block h-6 m-1">
