@@ -3,7 +3,6 @@ import { BsGithub } from "react-icons/bs";
 import StyledLink from "./StyledLink";
 import Image from "next/image";
 import { TechnologyIcon } from "./Technologies";
-import { useEffect } from "react";
 
 export default function ProjectDetail({ projectData }) {
   const { title, image, description, repository, deploy, technologiesUsed } =

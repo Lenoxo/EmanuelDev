@@ -38,7 +38,7 @@ const EcommerceDashboard = new Project(
   "This is Reactify's dashboard made with React.js, Next.js and TailwindCSS, it allows you to add, edit, delete and see useful data of the products in the Platzi Fake Store API. It also has User Authentication.",
   "https://react-ecommerce-dashboard.vercel.app/",
   "https://github.com/Lenoxo/react-ecommerce-dashboard",
-  ["React.js", "TailwindCSS", "Next.js"]
+  [{ name: "React.js", icon: IoLogoReact }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "Next.js", icon: SiNextdotjs }]
 );
 projectsData.push(EcommerceDashboard);
 
@@ -48,7 +48,7 @@ const Taskit = new Project(
   "Taskit is a task management and organization application built with Create React App.",
   "https://lenoxo.github.io/Taskit/",
   "https://github.com/Lenoxo/Taskit",
-  ["React.js"]
+  [{ name: "React.js", icon: IoLogoReact }]
 );
 projectsData.push(Taskit);
 
@@ -58,7 +58,7 @@ const PlatziTravel = new Project(
   "It is a landing page to view images of tourist sites, built with HTML and CSS in conjunction with Tailwind CSS. It is 100% responsive and features integrated Dark Mode.",
   "https://lenoxo.github.io/platzi-travel/",
   "https://github.com/Lenoxo/platzi-travel",
-  ["HTML", "TailwindCSS", "JavaScript"]
+  [{ name: "HTML", icon: IoLogoHtml5 }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "JavaScript", icon: IoLogoJavascript }]
 );
 projectsData.push(PlatziTravel);
 
@@ -68,7 +68,7 @@ const AsyncLanding = new Project(
   "Landing page for practicing the use of async functions and promises, consuming YouTube API and IMDb API from Rapid API.",
   "https://lenoxo.github.io/async-landing/",
   "https://github.com/Lenoxo/async-landing",
-  ["HTML", "TailwindCSS", "JavaScript"]
+  [{ name: "HTML", icon: IoLogoHtml5 }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "JavaScript", icon: IoLogoJavascript }]
 );
 projectsData.push(AsyncLanding);
 
@@ -78,7 +78,7 @@ const Mokepon = new Project(
   "Small video-game like Pokemon, made with pure HTML, CSS and JavaScript. Also, uses a nodejs local server. It's made for 2 players. It's also my first project.",
   "",
   "https://github.com/Lenoxo/Mokepon-project",
-  ["HTML", "CSS", "JavaScript"]
+  [{ name: "HTML", icon: IoLogoHtml5 }, { name: "CSS", icon: IoLogoCss3 }, { name: "JavaScript", icon: IoLogoJavascript }]
 );
 projectsData.push(Mokepon);
 
@@ -88,7 +88,7 @@ const EmanuelDev = new Project(
   "Is this website, built using Next.js",
   "https://emanueldev.vercel.app/",
   "https://github.com/Lenoxo/emanueldev",
-  ["React.js", "TailwindCSS", "Next.js"]
+  [{ name: "React.js", icon: IoLogoReact }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "Next.js", icon: SiNextdotjs }]
 );
 projectsData.push(EmanuelDev);
 
@@ -98,7 +98,7 @@ const YardSale = new Project(
   "This is the draft of a YardSale website main page, built using HTML, CSS and JavaScript.",
   "https://lenoxo.github.io/YardSale/",
   "https://github.com/Lenoxo/YardSale",
-  ["HTML", "CSS", "JavaScript"]
+  [{ name: "HTML", icon: IoLogoHtml5 }, { name: "CSS", icon: IoLogoCss3 }, { name: "JavaScript", icon: IoLogoJavascript }]
 );
 projectsData.push(YardSale);
 
