@@ -8,7 +8,6 @@ export default function ProjectCard({ projectData }) {
   const [open, setOpen] = useState(false);
   const { image, title, technologiesUsed } = projectData;
   const cardRef = useRef(null);
-  console.log(technologiesUsed)
 
   // This useEffect observes when a Card is within the viewport, and if it is, modifies tailwind classes to show it.
   useEffect(() => {
@@ -53,11 +52,15 @@ export default function ProjectCard({ projectData }) {
           className="w-full h-4/5 object-cover rounded-t-lg"
           alt={title}
         />
-      <div className="w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
-        {technologiesUsed?.map((technology) => {
-          return <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 h-6">{technology}</p> 
-        })}
-      </div>  
+        <div className="w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
+          {technologiesUsed?.map((technology) => {
+            return (
+              <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 h-6">
+                {technology.name}
+              </p>
+            );
+          })}
+        </div>
       </figure>
       <button
         className="w-full font-semibold text-sm p-3 flex items-center justify-between"
@@ -66,9 +69,7 @@ export default function ProjectCard({ projectData }) {
         <h3>{title}</h3>
         <BsThreeDots className="w-6 h-auto border border-zinc-400 p-1 rounded-full" />
       </button>
-      <div>
-
-      </div>
+      <div></div>
       <Modal open={open} setOpen={setOpen}>
         <ProjectDetail projectData={projectData} />
       </Modal>

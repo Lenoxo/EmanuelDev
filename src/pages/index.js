@@ -1,4 +1,4 @@
-import Technologies from "@/components/Technologies";
+import { Technologies } from "@/components/Technologies";
 import TopProjects from "@/components/TopProjects";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import StyledLink from "@/components/StyledLink";

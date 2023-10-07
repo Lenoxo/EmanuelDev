@@ -1,3 +1,13 @@
+import {
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoNodejs,
+  IoLogoJavascript,
+  IoLogoReact,
+  IoLogoNpm,
+} from "react-icons/io5";
+import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
+import { SiNextdotjs, SiExpress, SiSequelize } from "react-icons/si";
 let projectsData = [];
 
 class Project {
@@ -18,7 +28,7 @@ const Reactify = new Project(
   "This is an Ecommerce made with React.js, Next.js and TailwindCSS, with multiple features like PWA, User Authentication, Product Filtering, and much more!",
   "https://reactify-nextjs.vercel.app/",
   "https://github.com/Lenoxo/reactify-nextjs",
-  ["React.js", "TailwindCSS", "Next.js"]
+  [{ name: "React.js", icon: IoLogoReact }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "Next.js", icon: SiNextdotjs }]
 );
 projectsData.push(Reactify);
 

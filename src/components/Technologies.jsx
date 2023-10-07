@@ -10,14 +10,18 @@ import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
 import { SiNextdotjs, SiVite, SiExpress, SiSequelize } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
-const TechnologyIcon = ({ Icon, name }) => (
-  <div className="flex flex-col items-center text-sm w-12 hover:w-20 transition-all ease-in-out hover:text-xl duration-200">
+const TechnologyIcon = ({ Icon, name, withHoverEffect = true }) => (
+  <div
+    className={`flex flex-col items-center text-sm w-12 transition-all ease-in-out ${
+      withHoverEffect && "hover:text-xl hover:w-20"
+    } duration-200`}
+  >
     <Icon className="w-full h-auto" />
     <p className="text-center font-semibold">{name}</p>
   </div>
 );
 
-export default function Technologies() {
+function Technologies() {
   return (
     <section className="min-h-[85vh] py-12 bg-green-300 dark:bg-gray-800 flex flex-col items-center space-y-4">
       <h2 className="text-lg font-bold">Technologies</h2>
@@ -79,3 +83,5 @@ export default function Technologies() {
     </section>
   );
 }
+
+export { TechnologyIcon, Technologies };
