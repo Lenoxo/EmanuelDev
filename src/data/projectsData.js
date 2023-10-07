@@ -22,6 +22,16 @@ class Project {
 }
 
 // Projects instancies
+const DevShop = new Project(
+  "DevShop",
+  "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
+  "This is an API built using Node.js with Express.js for the main backend structure, Passport.js for authentications, Sequelize as ORM and PostgresSQL as DataBase.",
+  "https://backend-ecommerce-production-a555.up.railway.app/api/v1/products",
+  "https://github.com/Lenoxo/DevShop",
+  [{ name: "Node.js", icon: IoLogoNodejs }, { name: "Express.js", icon: SiExpress }, { name: "Sequelize.js", icon: SiSequelize }, { name: "PostgresSQL", icon: BiLogoPostgresql }]
+);
+projectsData.push(DevShop);
+
 const Reactify = new Project(
   "Reactify",
   "https://imgur.com/QhF9iXk.png",
