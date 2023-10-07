@@ -51,12 +51,16 @@ export default function ProjectCard({ projectData }) {
           src={image}
           className="w-full h-full object-cover rounded-t-lg"
           alt={title}
+          sizes="25vw"
         />
       </figure>
       <div className="w-full h-10 px-2 pt-2 overflow-hidden opacity-100">
-        {technologiesUsed?.map((technology) => {
+        {technologiesUsed?.map((technology, index) => {
           return (
-            <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 inline-block h-6 m-1">
+            <p
+              key={index}
+              className="rounded-full text-sm font-semibold border border-zinc-400 px-1 inline-block h-6 m-1"
+            >
               {technology.name}
             </p>
           );
