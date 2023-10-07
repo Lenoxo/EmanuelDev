@@ -10,25 +10,26 @@ export default function ProjectDetail({ projectData }) {
   return (
     <aside className="w-full h-full flex flex-col justify-center space-y-4">
       <h3 className="text-md font-bold text-center">{title}</h3>
-      <h4 className="px-3 font-semibold text-md text-center">Built Using</h4>
-      <div className="px-3 flex justify-around">
-        {technologiesUsed?.map((technology) => {
-          return (
-            <TechnologyIcon
-              Icon={technology.icon}
-              name={technology.name}
-              withHoverEffect={false}
-            />
-          );
-        })}
-      </div>
-      <div className="w-full h-40 sm:h-60 relative">
-        <Image
-          src={image}
-          fill={true}
-          className="rounded-lg object-cover"
-          alt={title}
-        />
+      <div className="flex flex-col justify-center items-center sm:flex-row">
+        <div className="px-3 grid grid-cols-3 min-[488px]:grid-cols-4 place-items-center gap-3 w-full sm:w-1/4 sm:grid-cols-1">
+          {technologiesUsed?.map((technology) => {
+            return (
+              <TechnologyIcon
+                Icon={technology.icon}
+                name={technology.name}
+                withHoverEffect={false}
+              />
+            );
+          })}
+        </div>
+        <figure className="w-full h-60 relative">
+          <Image
+            src={image}
+            fill={true}
+            className="rounded-lg object-cover"
+            alt={title}
+          />
+        </figure>
       </div>
       <p className="px-3 text-md">{description}</p>
       <div className="flex flex-row-reverse justify-between px-3">
