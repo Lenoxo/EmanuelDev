@@ -23,8 +23,8 @@ class Project {
 // Projects instancies
 const DevShop = new Project(
   "DevShop",
-  "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
-  "This is an API built using Node.js with Express.js for the main backend structure, Passport.js for authentications, Sequelize as ORM and PostgresSQL as DataBase.",
+  "https://imgur.com/z1KvPaA.png",
+  "The DevShop API is a project built using Node.js, Express.js, Passport.js, and PostgreSQL, designed to simulate the functionality of an e-commerce platform. This API provides a range of features and follows best practices, making it a robust foundation for testing and development purposes.",
   "https://backend-ecommerce-production-a555.up.railway.app/api/v1/products",
   "https://github.com/Lenoxo/DevShop",
   [{ name: "Node.js", icon: IoLogoNodejs }, { name: "Express.js", icon: SiExpress }, { name: "Sequelize.js", icon: SiSequelize }, { name: "PostgresSQL", icon: BiLogoPostgresql }]
