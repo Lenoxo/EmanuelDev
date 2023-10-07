@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ projectData }) {
   const [open, setOpen] = useState(false);
-  const { image, title } = projectData;
+  const { image, title, technologiesUsed } = projectData;
   const cardRef = useRef(null);
 
   // This useEffect observes when a Card is within the viewport, and if it is, modifies tailwind classes to show it.
@@ -42,17 +42,30 @@ export default function ProjectCard({ projectData }) {
   return (
     <article
       ref={cardRef}
-      className="w-60 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
+      className="w-64 h-auto border border-zinc-400 rounded-lg mb-8 shadow-lg flex-shrink-0 hover:brightness-50 transition-all opacity-0 duration-200 -translate-x-6"
     >
-      <figure className="w-full h-40">
+      <figure className="w-full h-40 relative">
         <Image
           width={240}
           height={160}
           src={image}
           className="w-full h-full object-cover rounded-t-lg"
           alt={title}
+          sizes="80vw (min-width: 768px) 60vw, (min-width: 1200px) 25vw"
         />
       </figure>
+      <div className="w-full h-10 px-2 pt-2 overflow-hidden opacity-100">
+        {technologiesUsed?.map((technology, index) => {
+          return (
+            <p
+              key={index}
+              className="rounded-full text-sm font-semibold border border-zinc-400 px-1 inline-block h-6 m-1"
+            >
+              {technology.name}
+            </p>
+          );
+        })}
+      </div>
       <button
         className="w-full font-semibold text-sm p-3 flex items-center justify-between"
         onClick={() => setOpen(true)}
