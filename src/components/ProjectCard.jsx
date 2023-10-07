@@ -49,19 +49,19 @@ export default function ProjectCard({ projectData }) {
           width={240}
           height={160}
           src={image}
-          className="w-full h-4/5 object-cover rounded-t-lg"
+          className="w-full h-full object-cover rounded-t-lg"
           alt={title}
         />
-        <div className="w-full h-1/5 flex space-x-3 justify-center items-end opacity-100">
-          {technologiesUsed?.map((technology) => {
-            return (
-              <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 h-6">
-                {technology.name}
-              </p>
-            );
-          })}
-        </div>
       </figure>
+      <div className="w-full min-h-10 px-2 pt-2 opacity-100">
+        {technologiesUsed?.map((technology) => {
+          return (
+            <p className="rounded-full text-sm font-semibold border border-zinc-400 px-1 inline-block h-6 m-1">
+              {technology.name}
+            </p>
+          );
+        })}
+      </div>
       <button
         className="w-full font-semibold text-sm p-3 flex items-center justify-between"
         onClick={() => setOpen(true)}
@@ -69,7 +69,6 @@ export default function ProjectCard({ projectData }) {
         <h3>{title}</h3>
         <BsThreeDots className="w-6 h-auto border border-zinc-400 p-1 rounded-full" />
       </button>
-      <div></div>
       <Modal open={open} setOpen={setOpen}>
         <ProjectDetail projectData={projectData} />
       </Modal>
