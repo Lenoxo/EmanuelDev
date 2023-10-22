@@ -25,7 +25,7 @@ const DevShop = new Project(
   "DevShop",
   "https://imgur.com/z1KvPaA.png",
   "The DevShop API is a project built using Node.js, Express.js, Passport.js, and PostgreSQL, designed to simulate the functionality of an e-commerce platform. This API provides a range of features and follows best practices, making it a robust foundation for testing and development purposes.",
-  "https://backend-ecommerce-production-a555.up.railway.app/api/v1/products",
+  "https://backend-ecommerce-production-a555.up.railway.app/api-docs",
   "https://github.com/Lenoxo/DevShop",
   [{ name: "Node.js", icon: IoLogoNodejs }, { name: "Express.js", icon: SiExpress }, { name: "Sequelize.js", icon: SiSequelize }, { name: "PostgresSQL", icon: BiLogoPostgresql }]
 );
