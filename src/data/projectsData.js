@@ -75,8 +75,8 @@ const AsyncLanding = new Project(
   "Async Landing",
   "https://imgur.com/6znt4Hc.png",
   "Landing page for practicing the use of async functions and promises, consuming YouTube API and IMDb API from Rapid API.",
-  "https://lenoxo.github.io/async-landing/",
-  "https://github.com/Lenoxo/async-landing",
+  "https://lenoxo.github.io/Async-Landing/",
+  "https://github.com/Lenoxo/Async-Landing",
   [{ name: "HTML", icon: IoLogoHtml5 }, { name: "TailwindCSS", icon: BiLogoTailwindCss }, { name: "JavaScript", icon: IoLogoJavascript }]
 );
 projectsData.push(AsyncLanding);
