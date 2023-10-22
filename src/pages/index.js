@@ -46,7 +46,7 @@ export default function Home() {
             <StyledLink to="https://github.com/Lenoxo">
               <BsGithub className="w-6 h-auto" />
             </StyledLink>
-            <StyledLink to="https://www.linkedin.com/in/angel-emanuel-aa25041a8/">
+            <StyledLink to="https://www.linkedin.com/in/emanuel-padilla-aa25041a8">
               <BsLinkedin className="w-6 h-auto" />
             </StyledLink>
           </div>
