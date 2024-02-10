@@ -1,6 +1,6 @@
 import { Technologies } from "@/components/Technologies";
 import TopProjects from "@/components/TopProjects";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import StyledLink from "@/components/StyledLink";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { phrasesArray } from "@/data/homePhrases";
@@ -42,17 +42,20 @@ export default function Home() {
             to develop innovative ideas and embrace continuous learning in the
             world of technology.
           </h2>
-          <div className="w-60 flex justify-between mt-4">
+          <div className="w-64 flex justify-between mt-4">
             <StyledLink to="https://github.com/Lenoxo">
               <BsGithub className="w-6 h-auto" />
             </StyledLink>
             <StyledLink to="https://www.linkedin.com/in/emanuel-padilla-aa25041a8">
               <BsLinkedin className="w-6 h-auto" />
             </StyledLink>
+            <StyledLink to="https://twitter.com/Lenoxo_dev">
+              <BsTwitterX className="w-6 h-auto" />
+            </StyledLink>
           </div>
           <StyledLink
             to="mailto:emanuehl159@gmail.com"
-            addStyle="text-md mt-4 w-60 h-6"
+            addStyle="text-md mt-4 w-64 h-6"
           >
             <p>emanuehl159@gmail.com</p>
           </StyledLink>

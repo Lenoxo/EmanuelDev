@@ -4,9 +4,10 @@ import {
   IoLogoNodejs,
   IoLogoJavascript,
   IoLogoReact,
+  IoLogoDocker,
 } from "react-icons/io5";
 import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
-import { SiNextdotjs, SiExpress, SiSequelize } from "react-icons/si";
+import { SiNextdotjs, SiExpress, SiSequelize, SiNeovim } from "react-icons/si";
 let projectsData = [];
 
 class Project {
@@ -21,6 +22,20 @@ class Project {
 }
 
 // Projects instancies
+
+const TempNvim = new Project(
+  "Temp-Nvim",
+  "https://imgur.com/BKgNAdP.png",
+  "Neovim Text Editor with plugins installed and containerized in a docker container, helping to have a quick setup for writing professional code with just one command. Based on Alpine Linux Image.",
+  "lalala",
+  "https://github.com/Lenoxo/temp-nvim/",
+  [
+    { name: "Docker", icon: IoLogoDocker },
+    { name: "Neovim", icon: SiNeovim },
+  ],
+);
+projectsData.push(TempNvim);
+
 const DevShop = new Project(
   "DevShop",
   "https://imgur.com/z1KvPaA.png",

@@ -5,6 +5,7 @@ import {
   IoLogoJavascript,
   IoLogoReact,
   IoLogoNpm,
+  IoLogoDocker,
 } from "react-icons/io5";
 import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
 import { SiNextdotjs, SiVite, SiExpress, SiSequelize } from "react-icons/si";
@@ -33,8 +34,8 @@ function Technologies() {
           <TechnologyIcon Icon={IoLogoCss3} name="CSS 3" />
           <TechnologyIcon Icon={IoLogoJavascript} name="JavaScript" />
           <TechnologyIcon Icon={IoLogoNpm} name="npm" />
-          <TechnologyIcon Icon={IoLogoNodejs} name="Node.js" />
           <TechnologyIcon Icon={BsGit} name="Git" />
+          <TechnologyIcon Icon={IoLogoDocker} name="Docker" />
         </div>
       </div>
 
@@ -64,9 +65,10 @@ function Technologies() {
           <h3 className="mb-2 text-md font-semibold">Backend</h3>
           <div>
             <h3 className="text-md text-center font-semibold">
-              Node.js Framework and ORM
+              Node.js ORM and Framework
             </h3>
             <div className="flex space-x-4 mt-4 justify-center">
+              <TechnologyIcon Icon={IoLogoNodejs} name="Node.js" />
               <TechnologyIcon Icon={SiExpress} name="Express.js" />
               <TechnologyIcon Icon={SiSequelize} name="Sequelize" />
             </div>
