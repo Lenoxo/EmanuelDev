@@ -10,8 +10,8 @@ export default function Document() {
         <NextScript />
         {/* This script has beforeInteractive to be applied before hydrating the page */}
         <Script id="dark-mode-status" strategy="beforeInteractive">
-          {`const isDarkModeActive = Boolean(localStorage.getItem("isDarkModeActive"))
-            if (isDarkModeActive) document.documentElement.classList.add("dark")`}
+          {`const isDarkModeActive = localStorage.getItem("isDarkModeActive")
+            if (isDarkModeActive === "true") document.documentElement.classList.add("dark")`}
         </Script>
       </body>
     </Html>

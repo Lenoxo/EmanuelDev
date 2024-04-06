@@ -1,17 +1,12 @@
-import { useEffect, useState } from "react";
 import { RiMoonClearLine } from "react-icons/ri";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 export default function DarkModeButton() {
-  const [DarkMode, setDarkMode] = useState(null);
-  useEffect(() => {
-    const isDarkModeActive = Boolean(localStorage.getItem("isDarkModeActive"));
-    setDarkMode(isDarkModeActive);
-  }, []); // This effect is used here to prevent this error: https://developer.school/snippets/react/localstorage-is-not-defined-nextjs
+  const { updateDarkModeStatus } = useLocalStorage();
 
   const handleDarkModeToggle = () => {
     document.documentElement.classList.toggle("dark");
-    setDarkMode(!DarkMode); // For toggling it
-    localStorage.setItem("isDarkModeActive", DarkMode.toString());
+    updateDarkModeStatus();
   };
 
   return (
