@@ -1,8 +1,12 @@
 import { RiMoonClearLine } from "react-icons/ri";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 export default function DarkModeButton() {
+  const { updateDarkModeStatus } = useLocalStorage();
+
   const handleDarkModeToggle = () => {
     document.documentElement.classList.toggle("dark");
+    updateDarkModeStatus();
   };
 
   return (
