@@ -10,7 +10,7 @@ export default function Home() {
       <div className="h-screen bg-gradient-to-tr from-zinc-600 to-zinc-800 dark:from-gray-900 dark:to-gray-600">
         <div className="bg-gradient-to-tr px-4 from-zinc-300 via-zinc-50 to-white dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-700 relative h-full w-full sm:w-3/5 lg:max-w-2xl flex flex-col justify-center items-center sm:items-start">
           <h1 className="font-extrabold text-2xl sm:text-4xl sm:mb-4">
-            Full-Stack Developercito
+            Full-Stack Developer
           </h1>
           <TypingText />
           <h2 className="text-md w-5/6 text-center sm:text-start">
