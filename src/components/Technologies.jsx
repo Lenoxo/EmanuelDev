@@ -5,7 +5,7 @@ import {
   IoLogoJavascript,
   IoLogoReact,
   IoLogoNpm,
-  IoLogoDocker,
+  IoLogoDocker
 } from "react-icons/io5";
 import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
 import { SiNextdotjs, SiVite, SiExpress, SiSequelize } from "react-icons/si";

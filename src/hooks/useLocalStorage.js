@@ -23,6 +23,6 @@ export function useLocalStorage() {
 
   return {
     darkMode,
-    updateDarkModeStatus,
+    updateDarkModeStatus
   };
 }

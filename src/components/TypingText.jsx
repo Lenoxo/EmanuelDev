@@ -5,7 +5,7 @@ export function TypingText() {
   const [writingText] = useTypewriter({
     words: phrasesArray,
     loop: 0,
-    typeSpeed: 130,
+    typeSpeed: 130
   });
   return (
     <>
