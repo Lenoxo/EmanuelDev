@@ -7,13 +7,13 @@ import { Montserrat, Crimson_Pro } from "next/font/google";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
-  display: "swap",
+  display: "swap"
 });
 
 const crimson_pro = Crimson_Pro({
   subsets: ["latin"],
   variable: "--font-crimson-pro",
-  display: "swap",
+  display: "swap"
 });
 
 export default function MainLayout({ children }) {
@@ -24,7 +24,10 @@ export default function MainLayout({ children }) {
         setShowMobileMenu={setShowMobileMenu}
         showMobileMenu={showMobileMenu}
       />
-      <MobileMenu setShowMobileMenu={setShowMobileMenu} showMobileMenu={showMobileMenu} />
+      <MobileMenu
+        setShowMobileMenu={setShowMobileMenu}
+        showMobileMenu={showMobileMenu}
+      />
       <main>{children}</main>
       <Footer />
     </div>

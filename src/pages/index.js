@@ -2,16 +2,9 @@ import { Technologies } from "@/components/Technologies";
 import TopProjects from "@/components/TopProjects";
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import StyledLink from "@/components/StyledLink";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { phrasesArray } from "@/data/homePhrases";
+import { TypingText } from "@/components/TypingText";
 
 export default function Home() {
-  const [writingText] = useTypewriter({
-    words: phrasesArray,
-    loop: 0,
-    typeSpeed: 130,
-  });
-
   return (
     <>
       <div className="h-screen bg-gradient-to-tr from-zinc-600 to-zinc-800 dark:from-gray-900 dark:to-gray-600">
@@ -19,22 +12,7 @@ export default function Home() {
           <h1 className="font-extrabold text-2xl sm:text-4xl sm:mb-4">
             Full-Stack Developer
           </h1>
-          <div
-            id="writingText-container"
-            className="block sm:absolute lg:right-[-45%] md:top-[40%] sm:right-[-40%] sm:top-[15%]"
-          >
-            <h2 className="text-inherit sm:text-zinc-100 text-xl text-center sm:text-start sm:text-4xl font-semibold sm:w-[7.5rem] py-4">
-              I code
-              <span className="text-green-400 dark:text-sky-400 font-bold text-xl sm:text-4xl">
-                {" "}
-                {writingText}
-              </span>
-              <span className="font-bold text-zinc-300">
-                <Cursor />
-              </span>
-            </h2>
-          </div>
-          {/* Later on, change this for a short paragraph explaining what you do. */}
+          <TypingText />
           <h2 className="text-md w-5/6 text-center sm:text-start">
             Proficient in HTML, CSS, JavaScript, and React. I work with
             libraries like Vite.js and Next.js and have backend experience with

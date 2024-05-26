@@ -4,6 +4,6 @@ module.exports = {
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
-  traillingComma: "es6",
-  bracketSpacing: true,
+  trailingComma: "none",
+  bracketSpacing: true
 };

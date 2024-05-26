@@ -4,19 +4,19 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'imgur.com',
-        port: '',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "imgur.com",
+        port: "",
+        pathname: "/**"
       },
       {
-        protocol: 'https',
-        hostname: 'media.giphy.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
-  },
-}
+        protocol: "https",
+        hostname: "media.giphy.com",
+        port: "",
+        pathname: "/**"
+      }
+    ]
+  }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
