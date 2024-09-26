@@ -7,7 +7,11 @@ import {
   IoLogoNpm,
   IoLogoDocker
 } from "react-icons/io5";
-import { BiLogoTailwindCss, BiLogoPostgresql } from "react-icons/bi";
+import {
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+  BiLogoPostgresql
+} from "react-icons/bi";
 import { SiNextdotjs, SiVite, SiExpress, SiSequelize } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
@@ -36,6 +40,7 @@ function Technologies() {
           <TechnologyIcon Icon={IoLogoNpm} name="npm" />
           <TechnologyIcon Icon={BsGit} name="Git" />
           <TechnologyIcon Icon={IoLogoDocker} name="Docker" />
+          <TechnologyIcon Icon={BiLogoTypescript} name="TypeScript" />
         </div>
       </div>
 
