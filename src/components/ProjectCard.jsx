@@ -67,6 +67,7 @@ export default function ProjectCard({ projectData }) {
         })}
       </div>
       <button
+        aria-label="See project details"
         className="w-full font-semibold text-sm p-3 flex items-center justify-between"
         onClick={() => setOpen(true)}
       >
