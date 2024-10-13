@@ -28,15 +28,18 @@ const TechnologyIcon = ({ Icon, name, withHoverEffect = true }) => (
 
 function Technologies() {
   return (
-    <section className="min-h-[85vh] py-12 bg-green-300 dark:bg-gray-800 flex flex-col items-center space-y-4">
+    <section className="h-[140vh] py-12 bg-green-300 dark:bg-gray-800 flex flex-col items-center space-y-4 md:h-[95vh]">
       <h2 className="text-lg font-bold">Technologies</h2>
 
       <div>
         <h3 className="text-md text-center font-semibold">Fundamentals</h3>
-        <div className="grid grid-cols-3 mt-4 space-x-4 space-x-reverse">
+        {/* In this div I use w-80 to prevent a stutter artifact*/}
+        <div className="flex space-x-4 mt-4 justify-center w-80">
           <TechnologyIcon Icon={IoLogoHtml5} name="HTML 5" />
           <TechnologyIcon Icon={IoLogoCss3} name="CSS 3" />
           <TechnologyIcon Icon={IoLogoJavascript} name="JavaScript" />
+        </div>
+        <div className="flex space-x-4 mt-4 justify-center">
           <TechnologyIcon Icon={IoLogoNpm} name="npm" />
           <TechnologyIcon Icon={BsGit} name="Git" />
           <TechnologyIcon Icon={IoLogoDocker} name="Docker" />
