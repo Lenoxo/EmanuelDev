@@ -25,7 +25,20 @@ class Project {
   }
 }
 
-// Projects instancies
+// Project instancies
+
+const MkDashboard = new Project(
+  "Mk-Dashboard",
+  "https://imgur.com/bqsgbpp.png",
+  "Mk-dashboard is a web application developed with React.js, designed to help you track Mortal Kombat 9 fights between friends or family6 It provides a sleek, glassmorphism-based interface perfect for counting and logging wins and losses during game sessions. And also I use BEM CSS architecture to organize styles.",
+  "https://mk-dashboard.vercel.app/",
+  "https://github.com/Lenoxo/mk-dashboard",
+  [
+    { name: "React.js", icon: IoLogoReact },
+    { name: "Typescript", icon: BiLogoTypescript }
+  ]
+);
+projectsData.push(MkDashboard);
 
 const PatientorFront = new Project(
   "Patientor-Front",
