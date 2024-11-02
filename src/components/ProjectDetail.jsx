@@ -32,7 +32,7 @@ export default function ProjectDetail({ projectData }) {
           <Image
             src={image}
             fill={true}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-contain"
             alt={title}
             sizes="75vw, (min-width: 768px) 60vw, (min-width: 1200px) 50vw"
           />
